@@ -1,0 +1,27 @@
+'''
+Main Snakefile.
+The aim is to run the cellranger pipeline automatically on all the samples defined in the config file
+'''
+
+# Path of the config file
+configfile: 'config/config.yaml'
+
+# Rules to execute the workflow
+include: 'rules/cellranger_rules.smk'
+include: 'rules/test.smk'
+
+# Master rule that launches the workflow
+rule all_cellranger:
+    '''
+    Dummy rule to automatically generate up to the vireo demultiplexing assessment.
+    '''
+    input:
+        expand(rules.move_cellranger.output.summary, sample=config['SAMPLES'])
+
+
+rule all_test:
+    '''
+    Dummy rule check the folder.
+    '''
+    input:
+        rules.test.output.test

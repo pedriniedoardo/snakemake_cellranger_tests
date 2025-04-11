@@ -1,0 +1,34 @@
+# Configuration options of cellranger pipeline running the preprocessing of the sc dataset generated from 10X
+
+# test parameters
+test01: 'resources/test01.txt'
+test02: 'resources/test02.txt.gz'
+
+# parameters cellranger
+# specify the cellranger verions from the conda
+# env_cellranger: '/home/edo/micromamba/envs/env_cellranger7' 
+env_cellranger: 'env_cellranger7'
+
+# specify the reference for the transcriptome
+transcriptome: '/home/edo/Documents/reference/cellranger/reference/refdata-gex-GRCh38-2020-A'
+
+# specify the run parameters
+cellranger_RAM: 32
+cellranger_RAM2: 32000
+cellranger_CPU: 8
+
+# specify the folder with the project files
+FASTQ_location: "/media/edo/ExtremeSSD/training/test_snakemake/test_cellranger/sample_data/test03/FASTQ/"
+out_location: "results/"
+
+# Sample names
+SAMPLES:
+  10X_LIB_P19:
+    expectCells: 10000
+    location:
+  10X_LIB_P8Q:
+    expectCells: 10000
+    location:
+  10X_LIB_P9G:
+    expectCells: 10000
+    location:
