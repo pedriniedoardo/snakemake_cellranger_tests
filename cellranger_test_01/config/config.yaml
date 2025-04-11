@@ -18,17 +18,26 @@ cellranger_RAM2: 32000
 cellranger_CPU: 8
 
 # specify the folder with the project files
-FASTQ_location: "/media/edo/ExtremeSSD/training/test_snakemake/test_cellranger/sample_data/test03/FASTQ/"
+FASTQ_location: "/media/edo/ExtremeSSD/training/test_snakemake/test_cellranger/sample_data/test01/"
+# FASTQ_location: "/media/edo/ExtremeSSD/training/test_snakemake/test_cellranger/sample_data/test03/FASTQ/"
 out_location: "results/"
 
 # Sample names
 SAMPLES:
-  10X_LIB_P19:
+  tinygex:
     expectCells: 10000
     location:
-  10X_LIB_P8Q:
+    INTRON_flag:
+  tinygex2:
     expectCells: 10000
     location:
-  10X_LIB_P9G:
-    expectCells: 10000
-    location:
+    INTRON_flag:
+  # 10X_LIB_P19:
+  #   expectCells: 10000
+  #   location:
+  # 10X_LIB_P8Q:
+  #   expectCells: 10000
+  #   location:
+  # 10X_LIB_P9G:
+  #   expectCells: 10000
+  #   location:

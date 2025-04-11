@@ -7,9 +7,7 @@ rule run_cellranger:
     conda:
         config['env_cellranger']
     output:
-        output = config["out_location"] + "output/{sample}_finished.log",
-        # summary = "/media/edo/sandiskSSD/work/training/snakemake/test_cellranger/pipeline/{sample}/outs/web_summary.html",
-        folder = directory(config["out_location"] + "{sample}")
+        output = config["out_location"] + "{sample}_finished.log"
     log:
         'logs/{sample}/run_cellranger.log'
     benchmark:
@@ -48,12 +46,12 @@ rule move_cellranger:
     This is the rule to move all the outputs to the output folder.
     '''
     input:
-        wd_cellranger = rules.run_cellranger.output.folder
+        wd_cellranger = rules.run_cellranger.output.output
     conda:
         config['env_cellranger']
     output:
-        folder = directory(config["out_location"] + "output/{sample}"),
-        summary = config["out_location"] + "output/web_summaries/{sample}_web_summary.html"
+        folder = directory(config["out_location"] + "{sample}"),
+        summary = config["out_location"] + "web_summaries/{sample}_web_summary.html"
     log:
         'logs/{sample}/02_MoveCellranger.log'
     benchmark:
@@ -63,7 +61,8 @@ rule move_cellranger:
         cpus = 1
     threads: 1
     params:
-        wd_summary = config["out_location"] + '{sample}/outs/web_summary.html'
+        wd_folder = directory("{sample}"),
+        wd_summary = '{sample}/outs/web_summary.html'
     shell:
         '''
         # copy
@@ -78,7 +77,7 @@ rule move_cellranger:
         echo "start move files <{wildcards.sample}>" >> {log}
         
         # move the files to the destination folder
-        mv {input.wd_cellranger} {output.folder} >> {log}
+        mv {params.wd_folder} {output.folder} >> {log}
 
         echo "move completed <{wildcards.sample}>" >> {log}
         '''
