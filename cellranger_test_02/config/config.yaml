@@ -1,0 +1,60 @@
+# Configuration options of cellranger pipeline for the 10X scRNAseq data
+
+# test parameters
+test01: 'resources/test01.txt'
+test02: 'resources/test02.txt'
+test_out: 'test_out.txt'
+
+# parameters cellranger
+# specify the cellranger verions from the conda
+# env_cellranger: '/home/edo/micromamba/envs/env_cellranger7' 
+env_cellranger: 'env_cellranger8'
+env_bioinfo: 'bioinfo'
+# env_cellranger: 'env_cellranger6.1'
+
+# specify the reference for the transcriptome
+# cluster
+# transcriptome: '/beegfs/scratch/ric.cosr/pedrini.edoardo/reference/cellranger/refdata-gex-GRCh38-2020-A'
+# local
+# transcriptome: '/home/edo/Documents/reference/cellranger/reference/refdata-gex-GRCh38-2020-A'
+
+# local test
+transcriptome: '/media/edo/sandiskSSD/work/training/snakemake/sample_data/cellranger_tiny_ref'
+
+# specify the run parameters
+cellranger_RAM: 64
+cellranger_CPU: 8
+INTRON_param: '--include-introns'
+INTRON_flag: 'true'
+BAM_flag: 'true'
+
+filtering_RAM: 16
+filtering_CPU: 4
+
+# specify the folder with the raw project files
+FASTQ_location: "/media/edo/ExtremeSSD/training/test_snakemake/test_cellranger/sample_data/test01/"
+
+out_location: "results/"
+
+# Sample names
+SAMPLES:
+  tinygex:
+    expectCells: 10000
+    location:
+    INTRON_flag:
+  tinygex2:
+    expectCells: 10000
+    location:
+    INTRON_flag:
+  # 10X_LIB_P19:
+  #   expectCells: 10000
+  #   location:
+  #   INTRON_flag: 'true'
+  # 10X_LIB_P8Q:
+  #   expectCells: 10000
+  #   location:
+  #   INTRON_flag: 'false'
+  # 10X_LIB_P9G:
+  #   expectCells: 10000
+  #   location:
+  #   INTRON_flag: 'true'

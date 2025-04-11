@@ -1,0 +1,7 @@
+# Instructions here: https://snakemake.readthedocs.io/en/stable/executing/cli.html
+executor: local
+jobs: 30
+conda-prefix: .snakemake/conda
+rerun-incomplete: true
+keep-going: true
+latency-wait: 60
