@@ -1,0 +1,57 @@
+# To be changed accordingly
+## path or URL to sequencing unit sheet (TSV format, columns: sample, unit, fq1, fq2)
+## Units are technical replicates (e.g. lanes, or resequencing of the same biological
+## sample).
+
+# ======================================================================
+# == define the location of the inputs ==
+# ======================================================================
+
+# path to the output of pypette
+# samples_csv: "config/samplesTestFast.csv"
+samples_csv: "config/samplesTestFastRuns.csv"
+
+# ======================================================================
+# == define the conda environments variables ==
+# ======================================================================
+
+# env containing cellranger
+env_cellranger: "env_cellranger8"
+
+# env containing the bioinfo tools
+# env_bioinfo: "/home/pedrini.edoardo/miniconda3/envs/env_bioinfo_minimal"
+env_bioinfo: "bioinfo"
+
+# ======================================================================
+# == define the main output location ==
+# ======================================================================
+
+# were to save the output of the processing
+out_location: "results/"
+
+# ======================================================================
+# == define some paramters for the rules ==
+# ======================================================================
+
+# parameters for cellranger
+INTRON_param: '--include-introns'
+INTRON_flag: 'true'
+BAM_flag: 'true'
+
+# ======================================================================
+# == reference ==
+# ======================================================================
+
+ref:
+  # Ensembl species name
+  species: homo_sapiens
+  # Gencode release (make sure to take one where snpeff data is available, check 'snpEff databases' output)
+  release: 45
+  # Genome build
+  build: GRCh38
+  database: gencode
+  animal: human
+  # Path to the reference genome for Cell Ranger (e.g., GRCh38 or mm10)
+  # reference: "/beegfs/datasets/buffer/ric.cosr/cellranger_genomes/refdata-gex-GRCh38-2020-A"
+  reference: "/home/edo/Documents/reference/cellranger/reference/cellranger_tiny_ref"
+  # reference: "/home/edo/Documents/reference/cellranger/reference/refdata-gex-GRCh38-2020-A"

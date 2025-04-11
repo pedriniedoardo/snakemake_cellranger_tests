@@ -1,0 +1,9 @@
+sample_name,sample_run,sample_path
+tinygex,run01,/media/edo/ExtremeSSD/training/test_snakemake/test_cellranger/sample_data/test02/run01/tinygex
+tinygex,run02,/media/edo/ExtremeSSD/training/test_snakemake/test_cellranger/sample_data/test02/run02/tinygex
+tinygex2,run02,/media/edo/ExtremeSSD/training/test_snakemake/test_cellranger/sample_data/test02/run02/tinygex2
+tinygex2,run01,/media/edo/ExtremeSSD/training/test_snakemake/test_cellranger/sample_data/test02/run01/tinygex2
+tinygex3,run01,/media/edo/ExtremeSSD/training/test_snakemake/test_cellranger/sample_data/test02/run01/tinygex3
+tinygex3,run02,/media/edo/ExtremeSSD/training/test_snakemake/test_cellranger/sample_data/test02/run02/tinygex3
+tinygex3,run03,/media/edo/ExtremeSSD/training/test_snakemake/test_cellranger/sample_data/test02/run03/tinygex3
+tinygex_single,run01,/media/edo/ExtremeSSD/training/test_snakemake/test_cellranger/sample_data/test02/run01/tinygex_single
