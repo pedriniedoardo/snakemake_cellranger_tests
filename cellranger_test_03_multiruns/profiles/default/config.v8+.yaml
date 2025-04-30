@@ -15,17 +15,30 @@ default-resources:
 
 set-threads:
     runCellranger: 8 # To be decided
+    runCellrangerMultiRun: 8
     pureExon: 16
+    pureExonMultiRun: 16
     pureIntron: 16
+    pureIntronMultiRun: 16
     pureAll: 16
+    pureAllMultiRun: 16
 
 set-resources:
     runCellranger: 
         mem_mb: 64000 # To be decided
         mem_gb: 64
+    runCellrangerMultiRun: 
+        mem_mb: 64000 # To be decided
+        mem_gb: 64
     pureExon: 
+        mem_mb: 64000 # To be decided
+    pureExonMultiRun: 
         mem_mb: 64000 # To be decided
     pureIntron: 
         mem_mb: 64000 # To be decided
+    pureIntronMultiRun: 
+        mem_mb: 64000 # To be decided
     pureAll: 
+        mem_mb: 64000 # To be decided
+    pureAllMultiRun: 
         mem_mb: 64000 # To be decided

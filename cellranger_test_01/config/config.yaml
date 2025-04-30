@@ -7,7 +7,7 @@ test02: 'resources/test02.txt.gz'
 # parameters cellranger
 # specify the cellranger verions from the conda
 # env_cellranger: '/home/edo/micromamba/envs/env_cellranger7' 
-env_cellranger: 'env_cellranger7'
+env_cellranger: 'env_cellranger8'
 
 # specify the reference for the transcriptome
 transcriptome: '/home/edo/Documents/reference/cellranger/reference/refdata-gex-GRCh38-2020-A'
@@ -18,7 +18,7 @@ cellranger_RAM2: 32000
 cellranger_CPU: 8
 
 # specify the folder with the project files
-FASTQ_location: "/media/edo/ExtremeSSD/training/test_snakemake/test_cellranger/sample_data/test01/"
+FASTQ_location: "/media/edo/Elements/training/test_snakemake/sample_data/test_cellranger/test01/"
 # FASTQ_location: "/media/edo/ExtremeSSD/training/test_snakemake/test_cellranger/sample_data/test03/FASTQ/"
 out_location: "results/"
 

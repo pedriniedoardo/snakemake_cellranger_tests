@@ -28,12 +28,13 @@ INTRON_param: '--include-introns'
 INTRON_flag: 'true'
 BAM_flag: 'true'
 
-filtering_RAM: 16
-filtering_CPU: 4
+filtering_RAM: 64
+filtering_CPU: 16
 
 # specify the folder with the raw project files
 # FASTQ_location: "/media/edo/ExtremeSSD/training/test_snakemake/test_cellranger/sample_data/test01/"
-FASTQ_location: "/media/edo/ExtremeSSD/training/test_snakemake/test_cellranger/sample_data/test03/FASTQ/"
+# FASTQ_location: "/media/edo/Elements/training/test_snakemake/sample_data/test_cellranger/test03/FASTQ/"
+FASTQ_location: "/media/edo/Elements/training/test_snakemake/sample_data/test_cellranger_intron/testBS/"
 
 out_location: "results/"
 
@@ -47,15 +48,19 @@ SAMPLES:
   #   expectCells: 10000
   #   location:
   #   INTRON_flag:
-  10X_LIB_P19:
-    expectCells: 10000
-    location:
-    INTRON_flag: 'true'
-  10X_LIB_P8Q:
-    expectCells: 10000
-    location:
-    INTRON_flag: 'false'
-  10X_LIB_P9G:
+  # 10X_LIB_P19:
+  #   expectCells: 10000
+  #   location:
+  #   INTRON_flag: 'true'
+  # 10X_LIB_P8Q:
+  #   expectCells: 10000
+  #   location:
+  #   INTRON_flag: 'false'
+  # 10X_LIB_P9G:
+  #   expectCells: 10000
+  #   location:
+  #   INTRON_flag: 'true'
+  W8_24h_CSF-controls_plus_untreated_multiplexed:
     expectCells: 10000
     location:
     INTRON_flag: 'true'
