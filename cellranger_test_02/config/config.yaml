@@ -34,7 +34,7 @@ filtering_CPU: 16
 # specify the folder with the raw project files
 # FASTQ_location: "/media/edo/ExtremeSSD/training/test_snakemake/test_cellranger/sample_data/test01/"
 # FASTQ_location: "/media/edo/Elements/training/test_snakemake/sample_data/test_cellranger/test03/FASTQ/"
-FASTQ_location: "/media/edo/Elements/training/test_snakemake/sample_data/test_cellranger_intron/testBS/"
+FASTQ_location: "../../sample_data/test_cellranger_intron/testBS/"
 
 out_location: "results/"
 
