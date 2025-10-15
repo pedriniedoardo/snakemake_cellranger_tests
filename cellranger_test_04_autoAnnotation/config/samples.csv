@@ -1,0 +1,6 @@
+Lane,Sample_ID,Sample_Name,Sample_Plate,Sample_Well,I7_Index_ID,index,I5_Index_ID,index2,Sample_Project,sample_run,sample_path
+1,NT_W8,NT_W8,GEx,C2,SI-TT-C2,CAATCCCGAC,,TACTACTCGG,PaninaP_2122_scRNAseq,231218_A00626_0728_AHNWWGDMXY,/beegfs/scratch/ric.cosr/ric.cosr/COSR_pipelines/scRNASeq_COSR_Standard_Workflow/fastq_sample/231218_A00626_0728_AHNWWGDMXY/NT_W8
+2,NT_W8,NT_W8,GEx,D2,SI-TT-D2,TTAATACGCG,,ACCCGAGGTG,PaninaP_2122_scRNAseq,231218_A00626_0728_AHNWWGDMXY,/beegfs/scratch/ric.cosr/ric.cosr/COSR_pipelines/scRNASeq_COSR_Standard_Workflow/fastq_sample/231218_A00626_0728_AHNWWGDMXY/NT_W8
+1,SCFA_W8,SCFA_W8,GEx,E2,SI-TT-E2,ATGGAGGGAG,,AATGGGTTAT,PaninaP_2122_scRNAseq,231218_A00626_0728_AHNWWGDMXY,/beegfs/scratch/ric.cosr/ric.cosr/COSR_pipelines/scRNASeq_COSR_Standard_Workflow/fastq_sample/231218_A00626_0728_AHNWWGDMXY/SCFA_W8
+2,SCFA_W8,SCFA_W8,GEx,F2,SI-TT-F2,AAGGGCCGCA,,GAGGAATCAG,PaninaP_2122_scRNAseq,231218_A00626_0728_AHNWWGDMXY,/beegfs/scratch/ric.cosr/ric.cosr/COSR_pipelines/scRNASeq_COSR_Standard_Workflow/fastq_sample/231218_A00626_0728_AHNWWGDMXY/SCFA_W8
+
