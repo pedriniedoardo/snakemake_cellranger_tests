@@ -142,6 +142,6 @@ rule runMultiqc1:
     shell:
         '''
         echo "start multiqc" >> {log}
-        multiqc {params.folder_in} -o {params.folder_out}
+        multiqc --force {params.folder_in} -o {params.folder_out}
         echo "end multiqc" >> {log}
         '''
