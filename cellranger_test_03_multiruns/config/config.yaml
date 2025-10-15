@@ -8,8 +8,8 @@
 # ======================================================================
 
 # path to the output of pypette
-samples_csv: "config/samplesTestFast.csv"
-# samples_csv: "config/samplesTestFastRuns.csv"
+# samples_csv: "config/samplesTestFast.csv"
+samples_csv: "config/samplesTestFastRuns.csv"
 
 # ======================================================================
 # == define the conda environments variables ==
