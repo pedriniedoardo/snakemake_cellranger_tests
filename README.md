@@ -50,3 +50,22 @@ snakemake --sdm conda -np cellranger_singlerun_default
 snakemake --sdm conda -np cellranger_multirun_default
 snakemake --sdm conda -np multirun_pure_IntronExon
 ```
+
+# cellranger_test_04_autoAnnotation
+
+* Automatic barcode annotation
+
+## Info
+This version is the same as the version 03, but includes the implementation of the automatic annotation implemented in cellranger 9
+
+## sample commands
+
+### Single-run
+```
+snakemake --sdm conda -np cellranger_singlerun_default
+```
+### Merged-run
+```
+snakemake --sdm conda -np cellranger_multirun_default
+snakemake --sdm conda -np multirun_pure_IntronExon
+```
