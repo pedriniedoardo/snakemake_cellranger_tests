@@ -33,6 +33,7 @@ rule run_cellranger:
         --fastqs={input.fastqs} \
         --sample={wildcards.sample} \
         --localcores={params.cpus} \
+        --create-bam=false \
         --localmem={params.RAM}
         
         # generate the output file

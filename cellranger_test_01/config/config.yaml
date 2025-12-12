@@ -18,7 +18,7 @@ cellranger_RAM2: 32000
 cellranger_CPU: 8
 
 # specify the folder with the project files
-FASTQ_location: "/media/edo/Elements/training/test_snakemake/sample_data/test_cellranger/test01/"
+FASTQ_location: "/mnt/SSD01/training/routines/snakemake/sample_data/test_cellranger/test01/"
 # FASTQ_location: "/media/edo/ExtremeSSD/training/test_snakemake/test_cellranger/sample_data/test03/FASTQ/"
 out_location: "results/"
 
