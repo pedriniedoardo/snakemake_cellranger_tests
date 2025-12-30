@@ -9,8 +9,8 @@
 
 # path to the output of pypette
 # samples_csv: "config/samplesTestFast.csv"
-samples_csv: "config/ECFC_cocolture.csv"
-# samples_csv: "config/samplesTestFastRuns.csv"
+# samples_csv: "config/ECFC_cocolture.csv"
+samples_csv: "config/samplesTestFast02_tinyTest_multirun.csv"
 
 # ======================================================================
 # == define the conda environments variables ==
@@ -56,5 +56,5 @@ ref:
   animal: human
   # Path to the reference genome for Cell Ranger (e.g., GRCh38 or mm10)
   # reference: "/beegfs/datasets/buffer/ric.cosr/cellranger_genomes/refdata-gex-GRCh38-2020-A"
-  # reference: "/home/edo/Documents/reference/cellranger/reference/cellranger_tiny_ref"
-  reference: "/home/edo/Documents/reference/cellranger/reference/refdata-gex-GRCh38-2024-A"
+  reference: "/home/edo/Documents/reference/cellranger/reference/cellranger_tiny_ref"
+  # reference: "/home/edo/Documents/reference/cellranger/reference/refdata-gex-GRCh38-2024-A"
